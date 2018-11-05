@@ -17,6 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".Menu" />
+        <activity android:name=".ModifierDonnee" />
+        <activity android:name=".Historique" />
+        <activity android:name=".ModifierMail"></activity>
     </application>
 
 </manifest>
