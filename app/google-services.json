@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "382605864874",
+    "firebase_url": "https://catch-em-53.firebaseio.com",
+    "project_id": "catch-em-53",
+    "storage_bucket": "catch-em-53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382605864874:android:2a05e2a212657066",
+        "android_client_info": {
+          "package_name": "com.example.daudin.catchem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382605864874-fovsub48r47a0bjtldn88inn2qgjuqiq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.daudin.catchem",
+            "certificate_hash": "345ad0663650910ab454c0f1f3347140ab7feaec"
+          }
+        },
+        {
+          "client_id": "382605864874-j0hk9nm3ibh9au38kc051vhjgmjqdmju.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.daudin.catchem",
+            "certificate_hash": "1f1cf6f46bccea0158dc5e78056ed3ed55a49b40"
+          }
+        },
+        {
+          "client_id": "382605864874-r68u4p2mhabhpfgf2fk16cqln5ivo91o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMgEgTciv7CCSC74Hvyo7fGm3Dc1xPVg4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382605864874-r68u4p2mhabhpfgf2fk16cqln5ivo91o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
