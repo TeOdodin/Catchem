@@ -19,7 +19,7 @@
         <activity android:name=".Menu" />
         <activity android:name=".Menu_ModifierDonnee" />
         <activity android:name=".Menu_Historique" />
-        <activity android:name=".Menu_ModifierMail"></activity>
+        <activity android:name=".Menu_ModifierMail" />
     </application>
 
 </manifest>
