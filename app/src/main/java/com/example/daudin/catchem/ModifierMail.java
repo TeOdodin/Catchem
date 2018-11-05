@@ -10,6 +10,5 @@ public class ModifierMail extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_modifier_mail);
-        Log.e("fcxgfd","df");
     }
 }
