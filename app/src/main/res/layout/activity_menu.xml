@@ -28,5 +28,6 @@
         android:layout_height="wrap_content"
         android:text="Modifier e-mail"
         tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="219dp" />
+        tools:layout_editor_absoluteY="219dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
