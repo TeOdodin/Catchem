@@ -7,7 +7,7 @@
     tools:context=".Menu">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/ModifierDonnee"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Modifier les données"
@@ -15,7 +15,7 @@
         tools:layout_editor_absoluteY="57dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/Historique"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Historique"
@@ -23,10 +23,11 @@
         tools:layout_editor_absoluteY="134dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/ModifeMail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Modifier e-mail"
         tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="219dp" />
+        tools:layout_editor_absoluteY="219dp"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>
