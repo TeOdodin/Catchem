@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
     DatabaseReference myRef;
 
-     FirebaseDatabase database = FirebaseDatabase.getInstance();
+    FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference myRef = database.getReference("message");
 
 
