@@ -19,6 +19,23 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        try {
+            database = FirebaseDatabase.getInstance();
+        } catch (Exception e) {
+            Log.e("BUGdatabase", e.getMessage());
+        }
+        try {
+        myRef = database.getReference("message");
+        } catch (Exception e) {
+            Log.e("BUGref", e.getMessage());
+        }
+        try {
+            myRef.setValue("Hello, World!");
+        } catch (Exception e) {
+            Log.e("BUGValue", e.getMessage());
+        }
+
         gestureDetector = new GestureDetectorCompat(this, this);
         gestureDetector.setOnDoubleTapListener(this);
         // myRef.setValue("Hello, World!");
