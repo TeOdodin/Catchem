@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
     @Override
     public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+
         return false;
     }
 
@@ -82,6 +83,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     public void swipeUp(){
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
-        overridePendingTransition(R.anim.swipe_up, R.anim.swipe_down);
+        overridePendingTransition(R.anim.swipe_up, R.anim.staticview);
     }
 }

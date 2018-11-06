@@ -11,12 +11,13 @@ public class Menu extends AppCompatActivity {
     private Button modifieDonne;
     private Button historique;
     private Button modifieMail;
+    public static View viewMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
+        viewMenu = findViewById(R.id.ViewMenu);
         modifieDonne = (Button) findViewById(R.id.ModifierDonnee);
         modifieDonne.setOnClickListener(new View.OnClickListener() {
             @Override
