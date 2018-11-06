@@ -2,6 +2,7 @@ package com.example.daudin.catchem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.GestureDetector;
@@ -11,6 +12,7 @@ import android.widget.Button;
 
 public class Menu extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener{
 
+    private GestureDetectorCompat gestureDetector;
     private Button modifieDonne;
     private Button historique;
     private Button modifieMail;
@@ -19,6 +21,8 @@ public class Menu extends AppCompatActivity implements GestureDetector.OnGesture
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+        gestureDetector = new GestureDetectorCompat(this, this);
+        gestureDetector.setOnDoubleTapListener(this);
         modifieDonne = (Button) findViewById(R.id.ModifierDonnee);
         modifieDonne.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -48,6 +52,12 @@ public class Menu extends AppCompatActivity implements GestureDetector.OnGesture
             }
 
         });
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event){
+        gestureDetector.onTouchEvent(event);
+        return super.onTouchEvent(event);
     }
 
     @Override
@@ -93,14 +103,18 @@ public class Menu extends AppCompatActivity implements GestureDetector.OnGesture
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
         if (e1.getY() < e2.getY()) {
-            this.swipeDown();
+            try {
+                this.swipeDown();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         return false;
     }
 
-    private void swipeDown() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+    private void swipeDown() throws InterruptedException {
+        Intent intent4 = new Intent(this, MainActivity.class);
+        startActivity(intent4);
         overridePendingTransition(R.anim.staticview, R.anim.swipe_down);
     }
 }
