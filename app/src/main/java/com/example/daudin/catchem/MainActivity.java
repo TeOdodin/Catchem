@@ -12,8 +12,8 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
     private GestureDetectorCompat gestureDetector;
 
-//     FirebaseDatabase database = FirebaseDatabase.getInstance();
-//    DatabaseReference myRef = database.getReference("message");
+    // FirebaseDatabase database = FirebaseDatabase.getInstance();
+   // DatabaseReference myRef = database.getReference("message");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
         if (e1.getY() > e2.getY()) {
             this.swipeUp();
-            Log.e("test quentin","swipe up");
         }
         return false;
     }
