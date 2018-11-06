@@ -1,5 +1,6 @@
 package com.example.daudin.catchem;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -10,17 +11,19 @@ public class Menu extends AppCompatActivity {
     private Button modifieDonne;
     private Button historique;
     private Button modifieMail;
+    public static View viewMenu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
+        viewMenu = findViewById(R.id.ViewMenu);
         modifieDonne = (Button) findViewById(R.id.ModifierDonnee);
         modifieDonne.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Menu.this, Menu_ModifierDonnee.class);
+                startActivity(intent);
             }
 
         });
@@ -29,7 +32,8 @@ public class Menu extends AppCompatActivity {
         historique.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Menu.this, Menu_Historique.class);
+                startActivity(intent);
             }
 
         });
@@ -38,7 +42,8 @@ public class Menu extends AppCompatActivity {
         modifieMail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(Menu.this, Menu_ModifierMail.class);
+                startActivity(intent);
             }
 
         });

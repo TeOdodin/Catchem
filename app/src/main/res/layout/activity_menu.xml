@@ -4,29 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu">
+    tools:context=".Menu"
+    android:id="@+id/ViewMenu">
 
-    <Button
-        android:id="@+id/ModifierDonnee"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Modifier les données"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="57dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/Historique"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Historique"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="134dp" />
+        <Button
+            android:id="@+id/ModifierDonnee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modifier les données"
+            tools:layout_editor_absoluteX="63dp"
+            tools:layout_editor_absoluteY="57dp" />
 
-    <Button
-        android:id="@+id/ModifeMail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Modifier e-mail"
-        tools:layout_editor_absoluteX="63dp"
-        tools:layout_editor_absoluteY="219dp" />
+        <Button
+            android:id="@+id/Historique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Historique"
+            app:layout_constraintTop_toBottomOf="@+id/ModifierDonnee"
+            tools:layout_editor_absoluteX="63dp" />
+
+        <Button
+            android:id="@+id/ModifeMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Modifier e-mail"
+            app:layout_constraintTop_toBottomOf="@+id/Historique"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="63dp" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
