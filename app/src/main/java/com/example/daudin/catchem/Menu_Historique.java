@@ -8,6 +8,6 @@ public class Menu_Historique extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_historique);
+       setContentView(R.layout.activity_historique);
     }
 }
