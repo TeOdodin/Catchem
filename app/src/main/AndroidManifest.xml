@@ -12,21 +12,21 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".Menu"
             android:label="Menu"/>
-        <activity android:name=".Menu_ModifierDonnee" />
+        <activity android:name=".Menu_ModifierDonnee"
+            android:label="Menu"/>
         <activity android:name=".Menu_Historique" />
         <activity android:name=".Menu_ModifierMail" />
         <activity android:name=".Menu_MD_ajouterDonner"
-            android:theme="@android:style/Theme.NoTitleBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".Menu_MD_suprimeDonnee"
-            android:theme="@android:style/Theme.NoTitleBar"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".Menu_MD_modifierDonnee"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 
 </manifest>
