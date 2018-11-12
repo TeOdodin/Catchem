@@ -23,14 +23,6 @@
           }
         },
         {
-          "client_id": "382605864874-j0hk9nm3ibh9au38kc051vhjgmjqdmju.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.daudin.catchem",
-            "certificate_hash": "1f1cf6f46bccea0158dc5e78056ed3ed55a49b40"
-          }
-        },
-        {
           "client_id": "382605864874-r68u4p2mhabhpfgf2fk16cqln5ivo91o.apps.googleusercontent.com",
           "client_type": 3
         }

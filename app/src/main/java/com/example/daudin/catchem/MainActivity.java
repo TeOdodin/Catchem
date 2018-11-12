@@ -7,44 +7,26 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
+import android.widget.Button;
+import android.widget.EditText;
+
 
 public class MainActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
     private GestureDetectorCompat gestureDetector;
-
-
-    FirebaseDatabase database;
-
-    DatabaseReference myRef;
-
-     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference myRef = database.getReference("message");
+    private EditText message;
+    private Button valider;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        try {
-            database = FirebaseDatabase.getInstance();
-        } catch (Exception e) {
-            Log.e("BUGdatabase", e.getMessage());
-        }
-        try {
-        myRef = database.getReference("message");
-        } catch (Exception e) {
-            Log.e("BUGref", e.getMessage());
-        }
-        try {
-            myRef.setValue("Hello, World!");
-        } catch (Exception e) {
-            Log.e("BUGValue", e.getMessage());
-        }
+        message = (EditText) findViewById(R.id.message);
+        valider = (Button) findViewById(R.id.valider);
 
         gestureDetector = new GestureDetectorCompat(this, this);
         gestureDetector.setOnDoubleTapListener(this);
-        // myRef.setValue("Hello, World!");
     }
 
     @Override
@@ -107,5 +89,10 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
         overridePendingTransition(R.anim.swipe_up, R.anim.staticview);
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+
     }
 }
