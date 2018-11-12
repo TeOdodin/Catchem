@@ -9,6 +9,6 @@ public class Menu_ModifierMail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_modifier_mail);
+       setContentView(R.layout.activity_modifier_mail);
     }
 }
