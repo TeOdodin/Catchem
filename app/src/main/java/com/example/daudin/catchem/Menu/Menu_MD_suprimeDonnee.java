@@ -1,7 +1,9 @@
-package com.example.daudin.catchem;
+package com.example.daudin.catchem.Menu;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.daudin.catchem.R;
 
 public class Menu_MD_suprimeDonnee extends AppCompatActivity {
 

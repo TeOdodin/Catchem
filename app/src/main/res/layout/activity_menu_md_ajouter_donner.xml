@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu_MD_ajouterDonner">
+    tools:context=".Menu.Menu_MD_ajouterDonner">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -56,7 +56,7 @@
                 tools:layout_editor_absoluteY="14dp" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/nom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -87,7 +87,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/prenom"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -106,7 +106,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" >
 
             <TextView
                 android:id="@+id/textView6"
@@ -122,7 +122,7 @@
                 android:orientation="horizontal">
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/immatriculation"
                     android:layout_width="307dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -140,7 +140,7 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/valider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorButton"
