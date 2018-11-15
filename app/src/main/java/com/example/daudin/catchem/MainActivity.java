@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 
-import com.example.daudin.catchem.Menu.Menu;
+import com.example.daudin.catchem.Class_Menu.Menu;
 
 public class MainActivity extends AppCompatActivity implements GestureDetector.OnGestureListener, GestureDetector.OnDoubleTapListener {
 
