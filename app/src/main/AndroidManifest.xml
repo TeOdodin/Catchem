@@ -15,17 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Menu.Menu"
+        <activity android:name=".Class_Menu.Menu"
             android:label="Menu"/>
-        <activity android:name=".Menu.Menu_ModifierDonnee"
+        <activity android:name=".Class_Menu.Menu_ModifierDonnee"
             android:label="Menu"/>
-        <activity android:name=".Menu.Menu_Historique" />
-        <activity android:name=".Menu.Menu_ModifierMail" />
-        <activity android:name=".Menu.Menu_MD_ajouterDonner"
+        <activity android:name=".Class_Menu.Menu_Historique" />
+        <activity android:name=".Class_Menu.Menu_ModifierMail" />
+        <activity android:name=".Class_Menu.Menu_MD_ajouterDonner"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".Menu.Menu_MD_suprimeDonnee"
+        <activity android:name=".Class_Menu.Menu_MD_suprimeDonnee"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity android:name=".Menu.Menu_MD_modifierDonnee"
+        <activity android:name=".Class_Menu.Menu_MD_modifierDonnee"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
     </application>
 

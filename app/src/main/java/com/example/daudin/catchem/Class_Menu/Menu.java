@@ -1,4 +1,4 @@
-package com.example.daudin.catchem.Menu;
+package com.example.daudin.catchem.Class_Menu;
 
 import android.content.Intent;
 import android.os.Bundle;

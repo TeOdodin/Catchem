@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_marginTop="30dp"
     android:orientation="vertical"
-    tools:context=".Menu.Menu">
+    tools:context=".Class_Menu.Menu">
 
     <LinearLayout
         android:id="@+id/linearLayout3"
