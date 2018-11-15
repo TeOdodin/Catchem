@@ -33,7 +33,7 @@ public class Menu_ModifierMail extends AppCompatActivity {
     }
 
     private void enregistrer(){
-        if (this.verifChap()){
+        if (this.verifChamp()){
             String adresseMail = mail.getText().toString();
             Log.i("test","mail = "+mail.getText().toString());
          /*
@@ -47,14 +47,17 @@ public class Menu_ModifierMail extends AppCompatActivity {
             Toast.makeText(this, "Champ incorrecte", Toast.LENGTH_SHORT).show();
     }
 
-    private boolean verifChap(){
+    private boolean verifChamp(){
         boolean champRemplie =  true;
-        if(this.mail.getText().toString() == ""){
+        if(this.mail.getText().toString().equals("")){
             this.mail.setError("Veuillez remplir ce champ");
             champRemplie = false;
         }
-        if(!verifSyntax()){
-            champRemplie = false;
+        if(!this.mail.getText().toString().equals("")) {
+            if (!verifSyntax()) {
+                this.mail.setError("Syntax incorrecte");
+                champRemplie = false;
+            }
         }
 
         return champRemplie;
@@ -62,7 +65,7 @@ public class Menu_ModifierMail extends AppCompatActivity {
 
     private boolean verifSyntax(){
         boolean syntaxCorrect = true;
-        Pattern p = Pattern.compile(".*@.*\\..*");
+        Pattern p = Pattern.compile(".+@.+\\.[a-z]+");
         Matcher m = p.matcher(this.mail.getText().toString());
         if (!m.matches())
             syntaxCorrect = false;
